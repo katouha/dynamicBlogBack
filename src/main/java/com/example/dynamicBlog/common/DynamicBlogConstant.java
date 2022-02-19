@@ -17,6 +17,8 @@ public class DynamicBlogConstant {
 	
 	public static final String BLOG_REGISTER_PARAM_ERROR = "ブログ更新者が入力されていません";
 	
+	public static final String BLOG_ID_PARAM_ERROR = "ブログIDが入力されていません";
+	
 	public static final String BLOG_KBN_PARAM_ERROR = "ブログ区分が選択されていません";
 	
 	public static final String BLOG_KBN_GET_ERROR = "ブログ区分が取得できませんでした";
@@ -30,4 +32,6 @@ public class DynamicBlogConstant {
 	public static final String PASSWORD_ERROR = "誤ったパスワードです";
 	
 	public static final String NO_REGIST_USER = "登録されていないユーザです";
+	
+	public static final String NO_BLOG_UP = "ブログが更新されていません";
 }

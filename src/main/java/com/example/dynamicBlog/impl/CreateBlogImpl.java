@@ -7,8 +7,8 @@ import org.apache.ibatis.annotations.Select;
 
 @Mapper
 public interface CreateBlogImpl {
-	@Insert("INSERT INTO m_blog_info (blogid, blogtitle, blogkbn,registusername,delflg) VALUES (#{blogid}, #{blogtitle}, #{blogkbn}, #{registusername}, #{delflg})")
-	void setBlogInfo(@Param("blogid") Long blogid,@Param("blogtitle")String blogtitle, @Param("blogkbn")String blogkbn,@Param("registusername")String registusername,@Param("delflg")Boolean delflg);
+	@Insert("INSERT INTO m_blog_info (blogid, blogtitle,blogdiscription, blogkbn,registusername,delflg) VALUES (#{blogid}, #{blogtitle},#{blogdiscription}, #{blogkbn}, #{registusername}, #{delflg})")
+	void setBlogInfo(@Param("blogid") Long blogid,@Param("blogtitle")String blogtitle, @Param("blogkbn")String blogkbn,@Param("registusername")String registusername,@Param("blogdiscription")String blogdiscription,@Param("delflg")Boolean delflg);
 	
 	@Insert("INSERT INTO m_image (imageid, imagepath, imagename,delflg) VALUES (#{imageid}, #{imagepath}, #{imagename}, #{delflg})")
 	void setImageInfo(@Param("imageid") Long imageid,@Param("imagepath")String imagepath, @Param("imagename")String imagename,@Param("delflg")Boolean delflg);

@@ -5,6 +5,7 @@ import java.sql.Date;
 public class GetBlogKbnMapperDto {
 	private String blogkbn;
 	private String kbnname;
+	private String kbndiscription;
 	private boolean delflg;
 	private Date registdate;
 	public String getBlogkbn() {
@@ -30,6 +31,12 @@ public class GetBlogKbnMapperDto {
 	}
 	public void setRegistdate(Date registdate) {
 		this.registdate = registdate;
+	}
+	public String getKbndiscription() {
+		return kbndiscription;
+	}
+	public void setKbndiscription(String kbndiscription) {
+		this.kbndiscription = kbndiscription;
 	}
 	
 	

@@ -35,8 +35,10 @@ public class GetBlogKbnController {
 			for(GetBlogKbnMapperDto kbnObj : blogList) {
 				if(!kbnObj.isDelflg()) {
 					KbnInfo kbnInfo = resDto.getResult(). new KbnInfo();
-					kbnInfo.setBlogKbn(kbnObj.getBlogkbn());
-					kbnInfo.setKbnName(kbnObj.getKbnname());
+					kbnInfo.setBlogkbn(kbnObj.getBlogkbn());
+					kbnInfo.setKbnname(kbnObj.getKbnname());
+					kbnInfo.setKbndiscription(kbnObj.getKbndiscription());
+					kbnInfo.setRegistdate(kbnObj.getRegistdate());
 					kbnList.add(kbnInfo);
 				}
 			}

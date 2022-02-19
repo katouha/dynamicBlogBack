@@ -23,6 +23,9 @@ public class CreateBlogReqDto implements Serializable {
 	@JsonProperty("blogSeq")
 	private Long blogSeq;
 	
+	@JsonProperty("blogdiscription")
+	private String blogdescription;
+	
 	@JsonProperty("blogList")
 	private BlogInfo blogList;
 
@@ -110,6 +113,14 @@ public class CreateBlogReqDto implements Serializable {
 
 	public void setBlogSeq(Long blogSeq) {
 		this.blogSeq = blogSeq;
+	}
+
+	public String getBlogdescription() {
+		return blogdescription;
+	}
+
+	public void setBlogdescription(String blogdescription) {
+		this.blogdescription = blogdescription;
 	}
 	
 }

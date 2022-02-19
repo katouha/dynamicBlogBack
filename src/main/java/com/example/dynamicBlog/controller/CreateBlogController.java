@@ -52,7 +52,7 @@ public class CreateBlogController {
 		//リクエスト値をもとにDB検索
 		if(reqDto.getApiFlg()) {
 			Long blogSeq = createBlogImpl.getBlogSeq();
-			createBlogImpl.setBlogInfo(blogSeq, reqDto.getTitle(), reqDto.getBlogKbn(), reqDto.getUserName(), false);
+			createBlogImpl.setBlogInfo(blogSeq, reqDto.getTitle(), reqDto.getBlogKbn(), reqDto.getUserName(),reqDto.getBlogdescription(), false);
 			if(file != null) {
 				Long imageSeq = createBlogImpl.getBlogSeq();
 				String path = "C:\\work\\開発\\image\\" + reqDto.getBlogList().getImageName();
